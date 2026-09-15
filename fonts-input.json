@@ -1,0 +1,8 @@
+{
+  "fonts": [
+    {"family": "Lato", "style": "Bold", "fontId": "Lato-Bold_1", "source": "GOOGLE"},
+    {"family": "Lato", "style": "Regular", "fontId": "Lato-Regular_1", "source": "GOOGLE"},
+    {"family": "Digital Numbers", "style": "Regular", "fontId": "DigitalNumbers-Regular_1", "source": "GOOGLE"},
+    {"family": "SF Pro Text", "style": "Regular", "fontId": "/Users/a.zherlitsyna/Library/Fonts/SF-Pro-Text-Regular.otf", "source": "LOCAL"}
+  ]
+}
