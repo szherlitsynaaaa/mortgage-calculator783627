@@ -179,7 +179,7 @@ function PaymentScheduleModal({ principal, annualRate, totalMonths, startDate, e
                 <p className="font-['Lato:Bold',sans-serif] text-[14px] leading-[20px] text-[#0d162e]">{year}</p>
               </div>
               {rows.filter(r => r.year === year).map((row, i) => (
-                <div key={i} className="flex items-center gap-[8px] px-[16px] py-[14px]" style={{ borderBottom: '1px solid #F3F5FA' }}>
+                <div key={i} className="flex items-center gap-[24px] px-[16px] py-[14px]" style={{ borderBottom: '1px solid #F3F5FA' }}>
                   <p className="flex-[1_0_0] font-['Lato:Regular',sans-serif] text-[16px] leading-[24px] text-[#0d162e]">{MONTHS_RU[row.month]}</p>
                   <p className="w-[80px] text-right font-['Lato:Regular',sans-serif] text-[16px] leading-[24px] text-[#0d162e]">{fmt(row.payment)} ₽</p>
                   {hasEarly && (
