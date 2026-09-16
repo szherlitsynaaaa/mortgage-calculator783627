@@ -636,7 +636,7 @@ function AppHeader() {
         <div className="flex items-center justify-between px-[20px] relative size-full">
           <div className="flex gap-[20px] items-center relative shrink-0">
             <IconBurger />
-            <LogoCian />
+            <p className="font-['Lato:Bold',sans-serif] text-[18px] text-[#212C46]">Циан</p>
           </div>
           <div className="flex gap-[24px] items-center relative shrink-0">
             <div className="flex gap-[8px] items-start justify-center relative shrink-0">
