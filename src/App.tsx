@@ -1337,7 +1337,6 @@ function FooterSection() {
         <div className="flex flex-col items-center max-w-[inherit] min-w-[inherit] size-full">
           <div className="flex flex-col items-center max-w-[inherit] min-w-[inherit] pb-[32px] pt-[40px] px-[16px] relative size-full">
             <div className="flex flex-col gap-[8px] items-center relative shrink-0 w-full">
-              <LogoCianNew />
               <p className="font-['Lato:Regular',sans-serif] leading-[20px] not-italic relative shrink-0 text-[#697797] text-[14px] underline whitespace-nowrap cursor-pointer">Полная версия сайта</p>
             </div>
           </div>
