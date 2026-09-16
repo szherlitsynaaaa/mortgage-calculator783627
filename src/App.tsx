@@ -788,9 +788,9 @@ function TermField({ term, setTerm }: { term: string; setTerm: (v: string) => vo
 }
 
 function DownPaymentPctChips({
-  propertyValue, setDownPayment,
+  propertyValue, downPayment, setDownPayment,
 }: {
-  propertyValue: number; setDownPayment: (v: string) => void
+  propertyValue: number; downPayment: number; setDownPayment: (v: string) => void
 }) {
   const pcts = [20, 30, 40, 50]
   return (
@@ -799,7 +799,7 @@ function DownPaymentPctChips({
         <Chip
           key={p}
           label={`${p}%`}
-          active={false}
+          active={Math.round(propertyValue * p / 100) === downPayment}
           onClick={() => setDownPayment(String(Math.round(propertyValue * p / 100)))}
         />
       ))}
@@ -1454,7 +1454,7 @@ function CalculatorSection({ calcRef }: { calcRef: React.RefObject<HTMLDivElemen
               <InputNum label="Стоимость недвижимости" value={m1Property} onChange={setM1Property} suffix="₽" money />
               <div className="relative shrink-0 w-full">
                 <InputNum label="Первоначальный взнос" value={m1Down} onChange={setM1Down} suffix="₽" money />
-                <DownPaymentPctChips propertyValue={p1} setDownPayment={setM1Down} />
+                <DownPaymentPctChips propertyValue={p1} downPayment={d1} setDownPayment={setM1Down} />
               </div>
               <TermField term={m1Term} setTerm={setM1Term} />
               <InputNum label="Ставка" value={m1Rate} onChange={setM1Rate} suffix="%" />
