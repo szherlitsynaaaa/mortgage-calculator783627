@@ -1,0 +1,10 @@
+{
+  "description": "Calculate mortgage payments, property costs, and early repayment options with an interactive tool that delivers precise results based on user inputs.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
