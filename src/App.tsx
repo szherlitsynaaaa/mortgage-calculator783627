@@ -166,7 +166,7 @@ function PaymentScheduleModal({ principal, annualRate, totalMonths, startDate, e
             <p className="flex-[1_0_0] font-['Lato:Regular',sans-serif] text-[14px] leading-[20px] text-[#697797]">Месяц</p>
             <p className="w-[80px] text-right font-['Lato:Regular',sans-serif] text-[14px] leading-[20px] text-[#697797]">Платёж</p>
             {hasEarly && <p className="w-[80px] text-right font-['Lato:Regular',sans-serif] text-[14px] leading-[20px] text-[#0468ff]">Досрочно</p>}
-            <p className="w-[84px] text-right font-['Lato:Regular',sans-serif] text-[14px] leading-[20px] text-[#697797]">Остаток</p>
+            <p className="w-[110px] text-right font-['Lato:Regular',sans-serif] text-[14px] leading-[20px] text-[#697797]">Остаток</p>
           </div>
 
           {/* All years in one continuous list */}
@@ -187,7 +187,7 @@ function PaymentScheduleModal({ principal, annualRate, totalMonths, startDate, e
                       {row.earlyPayment > 0.5 ? `${fmt(row.earlyPayment)} ₽` : '—'}
                     </p>
                   )}
-                  <p className="w-[84px] text-right font-['Lato:Regular',sans-serif] text-[16px] leading-[24px] text-[#0d162e]">{fmt(row.balance)} ₽</p>
+                  <p className="w-[110px] shrink-0 whitespace-nowrap text-right font-['Lato:Regular',sans-serif] text-[16px] leading-[24px] text-[#0d162e]">{fmt(row.balance)} ₽</p>
                 </div>
               ))}
             </div>
