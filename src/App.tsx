@@ -162,7 +162,7 @@ function PaymentScheduleModal({ principal, annualRate, totalMonths, startDate, e
         {/* Scrollable table */}
         <div ref={scrollRef} className="flex-1 overflow-y-auto overflow-x-hidden">
           {/* Sticky column headers */}
-          <div className="flex items-center gap-[8px] px-[16px] py-[10px] sticky top-0 bg-white z-10" style={{ borderBottom: '1px solid #D0D8E9' }}>
+          <div className="flex items-center gap-[24px] px-[16px] py-[10px] sticky top-0 bg-white z-10" style={{ borderBottom: '1px solid #D0D8E9' }}>
             <p className="flex-[1_0_0] font-['Lato:Regular',sans-serif] text-[14px] leading-[20px] text-[#697797]">Месяц</p>
             <p className="w-[80px] text-right font-['Lato:Regular',sans-serif] text-[14px] leading-[20px] text-[#697797]">Платёж</p>
             {hasEarly && <p className="w-[80px] text-right font-['Lato:Regular',sans-serif] text-[14px] leading-[20px] text-[#0468ff]">Досрочно</p>}
